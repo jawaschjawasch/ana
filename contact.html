@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)http://twitter.github.com/bootstrap/examples/starter-template.html -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Stathis Anastasia - Anastasia Stathis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="rooms,apartments,rent,beach,
+Kissamos,Crete,Creta,Kreta,Kriti,
+Hellas,Greece,Grece,Ellada,travel,Falasarna,Falassarna,Phalasarna,Phalassarna,Elafonissi,
+Elafonisi,Gramvoussa,Balos,Elafonissos,Platanos,Drapanias,Mithimna,
+greek,islands,vacations,tourism,olive,oil,
+Kissamou,travel,info,tours,wind,surfing,Chania,Hania,Khania">
+    <meta name="description" content="Anastasia - Stathis Apartments at Falasarna">
+    <meta name="author" content="Κωνσταντίνος Κωσταρέλλης">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="css/mods.css" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="index.html" id="brand">Anastasia - Stathis Apartments</a> 
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="index.html"><i class="icon-home"></i>Home</a></li>
+              <li><a href="pricelist.html">Price List</a></li>
+              <li><a href="directions.html"><i class="icon-globe"></i>Directions</a></li>
+              <li><a href="reservation.html">Reservation</a></li>
+              <li class="active"><a href="contact.html"><i class="icon-phone"></i>Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+        <div id="contact">
+            <p class="lead">Use the following options to contact us:</p>
+            <p><b>Anastasia Stathis</b><br />
+                <i class="icon-phone"></i>&nbsp;+30&nbsp;2822041480 <br />
+                <a href="mailto:ana-sta8@otenet.gr"><i class="icon-envelope-alt"></i>&nbsp;ana-sta8@otenet.gr</a><br />
+                <a href="http://www.facebook.com/anastasia.igglesi"><i class="icon-facebook"></i>&nbsp;Anastasia Igglesi</a>
+            </p>
+        </div>
+    </div>
+    <script src="js/jquery-1.8.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        var step=1;
+        var brandlogo = jQuery('#brand');
+        var logo = jQuery('#logo');
+        function changeName() {
+          if (step===1) {
+            brandlogo.text('Anastasia - Stathis Apartments');
+            logo.attr('src','img/anastasia-stathis-logo-01.gif');
+          }
+          if (step===2) {
+            brandlogo.text('Stathis - Anastasia Apartments');
+            logo.attr('src','img/stathis-anastasia-logo-01.gif');
+          }
+          if (step < 2) {
+            step++;
+          } else {
+            step = 1;
+          }
+          setTimeout("changeName()",4000);
+        }
+      jQuery(function() {
+        changeName();
+      })
+    </script>
+</body>
+
+</html>

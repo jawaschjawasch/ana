@@ -9,6 +9,10 @@ ul.unstyled li {
 	padding-top: 10px;
 }
 
+#langselector a {
+	margin: 0 5px;
+}
+
 div#contact{
 	margin:auto;
 }
